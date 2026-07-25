@@ -9,7 +9,7 @@ export default function NotFound() {
         This cup hasn&apos;t been poured yet.
       </h1>
       <p className="max-w-md text-base leading-relaxed text-forest/80 dark:text-cream/75">
-        The page you're looking for doesn't exist. Let's get you back to
+        The page you&apos;re looking for doesn&apos;t exist. Let&apos;s get you back to
         something warm.
       </p>
       <Link href="/">
