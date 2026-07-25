@@ -1,0 +1,25 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mapbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFE6D8"/>
+      <stop offset="100%" stop-color="#C3CFB8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#mapbg)"/>
+  <path d="M0 500 Q200 460 400 500 T800 500 T1200 480 V700 H0 Z" fill="#6E8F5C" opacity="0.35"/>
+  <g stroke="#243324" stroke-opacity="0.15" stroke-width="2">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="260" x2="1200" y2="260"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="150" y1="0" x2="150" y2="700"/>
+    <line x1="420" y1="0" x2="420" y2="700"/>
+    <line x1="700" y1="0" x2="700" y2="700"/>
+    <line x1="980" y1="0" x2="980" y2="700"/>
+  </g>
+  <g>
+    <circle cx="600" cy="330" r="14" fill="#243324"/>
+    <path d="M600 330 m0,-38 a38,38 0 1,1 -0.1,0 z" fill="none" stroke="#243324" stroke-width="4" opacity="0.4"/>
+    <path d="M600 292 C568 292 548 316 548 344 C548 386 600 430 600 430 C600 430 652 386 652 344 C652 316 632 292 600 292 Z" fill="#B98A63"/>
+    <circle cx="600" cy="342" r="14" fill="#FAF7F2"/>
+  </g>
+</svg>
