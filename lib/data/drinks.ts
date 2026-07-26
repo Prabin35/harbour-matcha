@@ -1,4 +1,4 @@
-import { Drink } from "@/lib/types";
+import { Drink, AddOn } from "@/lib/types";
 
 /**
  * CMS-READY CONTENT LAYER
@@ -20,37 +20,45 @@ import { Drink } from "@/lib/types";
 export const drinks: Drink[] = [
   {
     slug: "strawberry-matcha",
-    name: "Strawberry Matcha",
+    name: "Strawberry Matcha Latte",
     emoji: "🍓",
     tagline: "Fresh & fruited",
     description:
-      "Fresh strawberry purée layered with ceremonial matcha and silky milk.",
-    price: "$7.50",
+      "Premium Uji matcha with creamy milk and locally sourced PEI strawberries for a smooth, refreshing balance.",
+    price: "$8",
     image: "/images/strawberry-matcha.svg",
     badge: "Best Seller",
     accent: { from: "#F4A6A0", to: "#6E8F5C" },
   },
   {
     slug: "blueberry-matcha",
-    name: "Blueberry Matcha",
+    name: "Blueberry Matcha Latte",
     emoji: "🫐",
     tagline: "Deep & creamy",
     description:
-      "Homemade blueberry purée with creamy milk and premium ceremonial matcha.",
-    price: "$7.50",
+      "Premium Uji matcha blended with creamy milk and locally sourced PEI blueberries for a naturally sweet, fruity twist.",
+    price: "$8",
     image: "/images/blueberry-matcha.svg",
     accent: { from: "#8FA3D9", to: "#6E8F5C" },
   },
   {
     slug: "classic-matcha",
-    name: "Classic Matcha",
+    name: "Classic Matcha Latte",
     emoji: "🍵",
     tagline: "Pure & traditional",
     description:
-      "Traditional ceremonial matcha, whisked by hand, with perfectly steamed milk.",
-    price: "$6.50",
+      "Smooth, bold Uji matcha from Japan with creamy milk, naturally rich in umami and clean, sustained energy.",
+    price: "$7",
     image: "/images/classic-matcha.svg",
     accent: { from: "#A8B89A", to: "#6E8F5C" },
+  },
+];
+
+export const addOns: AddOn[] = [
+  {
+    name: "Make a Cloud Foam",
+    description: "With locally sourced strawberry or blueberry",
+    price: "$1",
   },
 ];
 

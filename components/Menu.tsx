@@ -1,4 +1,4 @@
-import { getDrinks } from "@/lib/data/drinks";
+import { getDrinks, addOns } from "@/lib/data/drinks";
 import ProductCard from "@/components/ProductCard";
 import { SectionHeading } from "@/components/ui/section-heading";
 
@@ -19,6 +19,30 @@ export default async function Menu() {
             <ProductCard key={drink.slug} drink={drink} index={i} />
           ))}
         </div>
+
+        {addOns.length > 0 && (
+          <div className="mx-auto mt-14 max-w-xl">
+            {addOns.map((addOn) => (
+              <div
+                key={addOn.name}
+                className="flex flex-col items-center gap-2 rounded-2xl border border-clay/40 px-8 py-7 text-center dark:border-clay/50"
+              >
+                <span className="eyebrow !text-clay-dark dark:!text-clay">
+                  Add On
+                </span>
+                <p className="text-base font-medium text-forest dark:text-cream">
+                  {addOn.name}{" "}
+                  <span className="font-normal text-forest/80 dark:text-cream/75">
+                    {addOn.description}
+                  </span>
+                </p>
+                <span className="text-lg font-semibold text-clay-dark dark:text-clay">
+                  {addOn.price}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
