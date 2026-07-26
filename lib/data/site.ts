@@ -4,8 +4,8 @@ export const siteConfig = {
   description:
     "Premium ceremonial matcha made fresh at Harbour Matcha — a small matcha stand by the water.",
   url: "https://harbourmatcha.com",
-  instagramHandle: "@harbourmatcha",
-  instagramUrl: "https://instagram.com/harbourmatcha",
+  instagramHandle: "@harbour_matcha",
+  instagramUrl: "https://www.instagram.com/harbour_matcha/",
   email: "hello@harbourmatcha.com",
   location: {
     line1: "12 Pier Walk",
