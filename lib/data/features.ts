@@ -4,25 +4,25 @@ export const features: Feature[] = [
   {
     title: "Ceremonial Grade Matcha",
     description:
-      "Stone-ground Japanese matcha, chosen for its color, aroma, and umami depth.",
+      "Premium Uji matcha imported directly from Japan, chosen for its umami depth and vibrant color.",
     icon: "leaf",
   },
   {
-    title: "Fresh Ingredients",
+    title: "Locally Sourced",
     description:
-      "Nothing sits in storage. Milk, fruit, and matcha are prepped the same day.",
+      "Our strawberries and blueberries are grown right here in PEI — nothing shipped from far away.",
     icon: "milk",
   },
   {
-    title: "Homemade Fruit Purées",
+    title: "Handmade Purées",
     description:
-      "Strawberry and blueberry purées, made in small batches, never from syrup.",
+      "Fruit purées made in-house in small batches, never from syrup or concentrate.",
     icon: "berry",
   },
   {
-    title: "Made Fresh Daily",
+    title: "Made Fresh to Order",
     description:
-      "Every cup is whisked to order — quality over quantity, always.",
+      "Every cup is whisked by hand the moment you order — nothing sits and waits.",
     icon: "sparkles",
   },
 ];

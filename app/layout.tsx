@@ -4,7 +4,6 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/lib/hooks/use-theme";
 import LoadingScreen from "@/components/LoadingScreen";
-import CustomCursor from "@/components/CustomCursor";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -121,7 +120,6 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <ThemeProvider>
           <LoadingScreen />
-          <CustomCursor />
           <div className="fixed inset-x-0 top-0 z-50">
             <AnnouncementBanner />
             <Navbar />

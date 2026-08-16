@@ -47,7 +47,6 @@ export default function Instagram() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             href={siteConfig.instagramUrl}
-            data-cursor="hover"
             className="inline-flex items-center gap-2 text-sm tracking-wide text-matcha transition-colors hover:text-matcha-dark dark:text-sage"
           >
             <InstagramIcon size={16} />
@@ -62,7 +61,6 @@ export default function Instagram() {
               href={post.href}
               target="_blank"
               rel="noopener noreferrer"
-              data-cursor="hover"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}

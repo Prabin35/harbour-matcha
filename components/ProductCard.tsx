@@ -40,7 +40,6 @@ export default function ProductCard({ drink, index }: ProductCardProps) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      data-cursor="hover"
       className="group relative overflow-hidden rounded-[28px] bg-beige/60 p-3 shadow-soft transition-shadow duration-500 hover:shadow-card dark:bg-forest-light/40"
     >
       {/* Mouse-following glow — position driven by CSS vars set via ref, opacity via inline style, no React re-render */}

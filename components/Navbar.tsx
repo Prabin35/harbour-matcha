@@ -36,7 +36,6 @@ export default function Navbar() {
       <nav className="container flex h-20 items-center justify-between">
         <a
           href="#home"
-          data-cursor="hover"
           className="flex items-center gap-2.5 text-forest dark:text-cream"
         >
           <Image
@@ -54,7 +53,6 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              data-cursor="hover"
               className="text-sm tracking-wide text-forest/75 transition-colors hover:text-forest dark:text-cream/75 dark:hover:text-cream"
             >
               {link.label}
@@ -66,15 +64,14 @@ export default function Navbar() {
           <button
             onClick={toggleTheme}
             aria-label="Toggle dark mode"
-            data-cursor="hover"
             className="flex h-10 w-10 items-center justify-center rounded-full text-forest transition-colors hover:bg-forest/5 dark:text-cream dark:hover:bg-cream/10"
           >
             {theme === "dark" ? <Sun size={17} /> : <Moon size={17} />}
           </button>
 
           <div className="hidden sm:block">
-            <Button size="sm" onClick={() => document.getElementById("visit")?.scrollIntoView({ behavior: "smooth" })}>
-              Order Soon
+            <Button size="sm" onClick={() => document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" })}>
+              View Menu
             </Button>
           </div>
 
@@ -83,7 +80,6 @@ export default function Navbar() {
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav-menu"
-            data-cursor="hover"
             className="flex h-10 w-10 items-center justify-center rounded-full text-forest lg:hidden dark:text-cream"
           >
             {mobileOpen ? <X size={20} /> : <MenuIcon size={20} />}
@@ -111,7 +107,7 @@ export default function Navbar() {
           ))}
           <div className="mt-2 px-3">
             <Button className="w-full" onClick={() => setMobileOpen(false)}>
-              Order Soon
+              View Menu
             </Button>
           </div>
         </div>

@@ -35,9 +35,8 @@ export default function Hero() {
     >
       {/* Ambient floating organic shapes (parallax) */}
       <motion.div style={{ y: bgY }} className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-24 top-24 h-72 w-72 rounded-full bg-sage/30 blur-3xl animate-floatSlow" />
-        <div className="absolute right-0 top-10 h-80 w-80 rounded-full bg-matcha/20 blur-3xl animate-float" />
-        <div className="absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-clay/20 blur-3xl animate-floatSlow" />
+        <div className="absolute -left-24 top-24 h-72 w-72 rounded-full bg-sage/25 blur-3xl animate-floatSlow" />
+        <div className="absolute right-0 top-10 h-80 w-80 rounded-full bg-matcha/15 blur-3xl animate-float" />
       </motion.div>
 
       <div className="container relative grid grid-cols-1 items-center gap-16 pt-36 lg:grid-cols-2 lg:pt-32">
@@ -88,14 +87,17 @@ export default function Hero() {
             >
               Explore Our Matcha
             </Button>
-            <a
-              href="#about"
-              data-cursor="hover"
-              className="text-sm tracking-wide text-forest/80 underline-offset-4 transition-colors hover:text-forest hover:underline dark:text-cream/75 dark:hover:text-cream"
-            >
-              Our Story
-            </a>
           </motion.div>
+
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={4}
+            className="text-xs tracking-wide text-forest/55 dark:text-cream/50"
+          >
+            Locally sourced PEI strawberries &amp; blueberries &middot; Ceremonial Uji matcha from Japan
+          </motion.p>
         </motion.div>
 
         <motion.div

@@ -24,7 +24,6 @@ export default function AnnouncementBanner() {
             <button
               onClick={() => setVisible(false)}
               aria-label="Dismiss announcement"
-              data-cursor="hover"
               className="absolute right-4 text-cream/60 transition-colors hover:text-cream"
             >
               <X size={15} />

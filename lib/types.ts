@@ -19,12 +19,6 @@ export interface AddOn {
   price: string;
 }
 
-export interface AddOn {
-  name: string;
-  description: string;
-  price: string;
-}
-
 export interface Feature {
   title: string;
   description: string;

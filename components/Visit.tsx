@@ -61,7 +61,6 @@ export default function Visit() {
               href={siteConfig.location.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              data-cursor="hover"
               className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full bg-cream px-5 py-2.5 text-xs font-medium tracking-wide text-forest shadow-soft transition-transform hover:scale-105"
             >
               Open in Maps <ArrowUpRight size={13} />
@@ -101,7 +100,6 @@ export default function Visit() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      data-cursor="hover"
                       className="flex items-start gap-4"
                     >
                       {content}
