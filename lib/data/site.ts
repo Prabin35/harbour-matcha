@@ -1,23 +1,19 @@
 export const siteConfig = {
-  name: "Harbour Matcha",
+  name: "Matcha Keepers",
   tagline: "Crafted One Matcha at a Time.",
   description:
     "Premium ceremonial matcha made fresh at Harbour Matcha — a small matcha stand by the water.",
   url: "https://harbourmatcha.com",
   instagramHandle: "@harbour_matcha",
-  instagramUrl: "https://www.instagram.com/harbour_matcha/",
-  email: "hello@harbourmatcha.com",
+  instagramUrl: "https://www.instagram.com/matchakeepers/",
+  email: "matchakeepers@gmail.com",
   location: {
-    line1: "12 Pier Walk",
+    line1: "hu",
     line2: "Harbourfront, Charlottetown, PE",
     mapsUrl: "https://maps.google.com/?q=Harbourfront+Charlottetown",
   },
-  hours: [
-    { day: "Monday – Friday", time: "7:30 AM – 4:00 PM" },
-    { day: "Saturday", time: "8:00 AM – 5:00 PM" },
-    { day: "Sunday", time: "9:00 AM – 2:00 PM" },
-  ],
-  announcement: "Grand Opening Soon — Harbourfront, Charlottetown",
+
+  announcement: "News will be posted down here",
   navLinks: [
     { label: "Home", href: "#home" },
     { label: "Menu", href: "#menu" },
