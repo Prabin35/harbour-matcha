@@ -87,6 +87,13 @@ export default function Hero() {
             >
               Explore Our Matcha
             </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => document.getElementById("events")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Book an Event
+            </Button>
           </motion.div>
 
           <motion.p

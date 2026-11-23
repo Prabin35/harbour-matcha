@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useId, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 /**
@@ -15,6 +15,9 @@ import { motion, useInView } from "framer-motion";
 export default function MatchaWhisk() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { margin: "-10% 0px -10% 0px" });
+  const uid = useId();
+  const surfaceId = `matchaSurface-${uid}`;
+  const bowlId = `bowlBody-${uid}`;
 
   return (
     <div
@@ -41,23 +44,23 @@ export default function MatchaWhisk() {
         className="relative drop-shadow-[0_25px_40px_rgba(36,51,36,0.18)] sm:h-[280px] sm:w-[280px]"
       >
         <defs>
-          <radialGradient id="matchaSurface" cx="45%" cy="40%" r="65%">
+          <radialGradient id={surfaceId} cx="45%" cy="40%" r="65%">
             <stop offset="0%" stopColor="#87A874" />
             <stop offset="100%" stopColor="#56714A" />
           </radialGradient>
-          <linearGradient id="bowlBody" x1="0" y1="0" x2="0" y2="1">
+          <linearGradient id={bowlId} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="#EFE6D8" />
             <stop offset="100%" stopColor="#DCCEB4" />
           </linearGradient>
         </defs>
         <path
           d="M30 90 C30 90 40 190 110 190 C180 190 190 90 190 90 Z"
-          fill="url(#bowlBody)"
+          fill={`url(#${bowlId})`}
           stroke="#243324"
           strokeOpacity="0.15"
           strokeWidth="1.5"
         />
-        <ellipse cx="110" cy="90" rx="80" ry="18" fill="url(#matchaSurface)" />
+        <ellipse cx="110" cy="90" rx="80" ry="18" fill={`url(#${surfaceId})`} />
         <ellipse cx="110" cy="90" rx="80" ry="18" fill="none" stroke="#243324" strokeOpacity="0.12" strokeWidth="1.5" />
       </svg>
 

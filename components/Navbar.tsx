@@ -41,8 +41,8 @@ export default function Navbar() {
           <Image
             src="/images/logo-mark.svg"
             alt=""
-            width={32}
-            height={32}
+            width={44}
+            height={44}
             className="text-forest dark:text-cream"
           />
           <span className="font-serif text-lg tracking-wide">{siteConfig.name}</span>

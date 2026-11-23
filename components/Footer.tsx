@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="border-t border-forest/10 bg-beige py-14 dark:border-cream/10 dark:bg-forest">
       <div className="container flex flex-col items-center gap-8 text-center">
         <a href="#home" className="flex items-center gap-2.5 text-forest dark:text-cream">
-          <Image src="/images/logo-mark.svg" alt="" width={30} height={30} />
+          <Image src="/images/logo-mark.svg" alt="" width={42} height={42} />
           <span className="font-serif text-lg tracking-wide">{siteConfig.name}</span>
         </a>
 

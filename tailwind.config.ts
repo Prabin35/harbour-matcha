@@ -71,6 +71,14 @@ const config: Config = {
           "0%": { height: "0%" },
           "100%": { height: "78%" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        pulseDot: {
+          "0%, 100%": { transform: "scale(1)", opacity: "1" },
+          "50%": { transform: "scale(1.6)", opacity: "0.4" },
+        },
       },
       animation: {
         float: "float 7s ease-in-out infinite",
@@ -80,6 +88,8 @@ const config: Config = {
         shimmer: "shimmer 3s linear infinite",
         fadeUp: "fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
         pourFill: "pourFill 1.6s cubic-bezier(0.65, 0, 0.35, 1) forwards",
+        marquee: "marquee 36s linear infinite",
+        pulseDot: "pulseDot 1.8s ease-in-out infinite",
       },
       boxShadow: {
         soft: "0 8px 30px -12px rgba(36, 51, 36, 0.18)",

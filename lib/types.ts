@@ -30,3 +30,22 @@ export interface InstagramPost {
   alt: string;
   href: string;
 }
+
+export interface EventStep {
+  title: string;
+  description: string;
+}
+
+export interface RetailProduct {
+  name: string;
+  description: string;
+  icon: "keychain" | "charm" | "powder";
+}
+
+export interface PopUpInfo {
+  status: string;
+  headline: string;
+  message: string;
+  when: string;
+  where: string;
+}
